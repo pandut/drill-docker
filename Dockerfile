@@ -10,7 +10,7 @@
 #
 FROM centos
 
-MAINTAINER "pandu" <pandu.t@qubida.com>
+MAINTAINER "pandut" <pandu.t@qubida.com>
 
 #
 # Prerequisite: Install Java, tar and create Drill folders
