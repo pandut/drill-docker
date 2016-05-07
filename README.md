@@ -5,10 +5,10 @@ Apache Drill (embedded mode) Docker image
 Launch the Apache Drill Container
 Pull the image
 
-docker pull pandu/apache-drill-docker
+docker pull pandut/drill-docker
 Run the container
 
-docker run -it pandu/apache-drill-docker /drill-scripts/bootstrap.sh
+docker run -it pandut/drill-docker /drill-scripts/bootstrap.sh
 Start querying
 
 SELECT * FROM cp.`employee.json` LIMIT 5;
@@ -19,7 +19,7 @@ Access the Apache Drill Web UI
 
 Apache Drill comes with a Web management UI. In order to access this, the port needs to be forwarded to the host running Docker. To do so, please run the Docker container with the -p option to publish the container's port to the host as follows:
 
-docker run -it -p 8047:8047 pandu/apache-drill-docker /drill-scripts/bootstrap.sh
+docker run -it -p 8047:8047 pandut/drill-docker /drill-scripts/bootstrap.sh
 Using Docker on Linux
 
 To access the Apache Drill Web UI please run:
